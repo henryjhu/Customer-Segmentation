@@ -10432,7 +10432,7 @@ HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Nois
 <span class="c1"># Initialize and fit the HDBSCAN model</span>
 <span class="c1"># min_cluster_size is the primary parameter to tune. </span>
 <span class="c1"># Scikit Learn recommends to start min_cluster_size between 0.5% and 1% of total dataset size.</span>
-<span class="c1"># There are 1138 customers. So, min_cluster_size starts at 11 and get adjusted higher from here.</span>
+<span class="c1"># There are 1139 customers. So, min_cluster_size starts at 11 and get adjusted higher from here.</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">HDBSCAN</span><span class="p">(</span><span class="n">min_cluster_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">min_samples</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
